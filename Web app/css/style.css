@@ -17,7 +17,7 @@ nav h3 {
     text-align: right;
 }
 
-.nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
