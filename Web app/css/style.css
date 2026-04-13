@@ -5,14 +5,14 @@ body {
     padding: 20px;
 }
 
-h1 {
+nav h1 {
     color: #fff;
     text-align: left;
     margin-bottom: 20px;
     
 }
 
-h3 {
+nav h3 {
     color: #fff;
     text-align: right;
 }
@@ -26,3 +26,53 @@ h3 {
 }
 
 
+.info {
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.info h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.info p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.content {
+    background-color: #00c3ff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.content h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.content-item a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-item p {
+    margin: 10px;
+    line-height: 1.5;
+}
