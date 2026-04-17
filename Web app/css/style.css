@@ -46,9 +46,17 @@ nav {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     background-color: #00c3ff;
     padding: 20px;
     border-radius: 5px;
+}
+
+.content-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .content h3 {
@@ -84,4 +92,19 @@ nav {
     width: 10%;
     height: auto;
     border-radius: 5px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav_links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
