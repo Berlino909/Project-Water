@@ -148,3 +148,12 @@ nav {
         text-align: center;
     }
 }
+
+
+.video-container {
+    display: block;
+    margin: 40px auto;
+    width: 600px;
+    border-radius: 12px;
+    
+}
