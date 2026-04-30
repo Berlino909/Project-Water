@@ -4,54 +4,62 @@ dicionario_risposte = {}
 
 nikename = ""
 
+def print_grafic(text):
+    label_grafic = tk.Label(root, text=text, bg="lightgray", font=("Helvetica", 10))
+    label_grafic.pack(pady=5)
+
+
+
 def domada1(nikename):
-    print("Domanda 1: Qual è la fonte principale di acqua potabile nella tua zona?")
+    print_grafic("Domanda 1: Qual è la fonte principale di acqua potabile nella tua zona?")
     risposta = input("Risposta: ")
-    print(f"{nikename} ha risposto: {risposta}")
+    print_grafic(f"{nikename} ha risposto: {risposta}")
     
 
 def domada2(nikename):
-    print("Domanda 2: Quante persone vivono nella tua zona?")
+    print_grafic("Domanda 2: Quante persone vivono nella tua zona?")
     risposta = input("Risposta: ")
-    print(f"{nikename} ha risposto: {risposta}")
+    print_grafic(f"{nikename} ha risposto: {risposta}")
 
 def domada3(nikename):
-    print("Domanda 3: Quale è la principale fonte di inquinamento dell'acqua nella tua zona?")
+    print_grafic("Domanda 3: Quale è la principale fonte di inquinamento dell'acqua nella tua zona?")
     risposta = input("Risposta: ")
-    print(f"{nikename} ha risposto: {risposta}")
+    print_grafic(f"{nikename} ha risposto: {risposta}")
 
 def domada4(nikename):
-    print("Domanda 4: Quante fonti di acqua potabile ci sono nella tua zona?")
+    print_grafic("Domanda 4: Quante fonti di acqua potabile ci sono nella tua zona?")
     risposta = input("Risposta: ")
-    print(f"{nikename} ha risposto: {risposta}")
+    print_grafic(f"{nikename} ha risposto: {risposta}")
 
 def domada6(nikename):
-    print("Domanda 6: Qual è il principale utilizzo dell'acqua nella tua zona?")
+    print_grafic("Domanda 6: Qual è il principale utilizzo dell'acqua nella tua zona?")
     risposta = input("Risposta: ")
-    print(f"{nikename} ha risposto: {risposta}")
+    print_grafic(f"{nikename} ha risposto: {risposta}")
 
 def domada7(nikename):
-    print("Domanda 7: Quante persone hanno accesso all'acqua potabile nella tua zona?")
+    print_grafic("Domanda 7: Quante persone hanno accesso all'acqua potabile nella tua zona?")
     risposta = input("Risposta: ")
-    print(f"{nikename} ha risposto: {risposta}")
+    print_grafic(f"{nikename} ha risposto: {risposta}")
 
 def domada8(nikename):
-    print("Domanda 8: Qual è il principale problema legato all'acqua nella tua zona?")
+    print_grafic("Domanda 8: Qual è il principale problema legato all'acqua nella tua zona?")
     risposta = input("Risposta: ")
-    print(f"{nikename} ha risposto: {risposta}")
+    print_grafic(f"{nikename} ha risposto: {risposta}")
 
 def domada9(nikename):
-    print("Domanda 9: Quante fonti di acqua potabile sono monitorate nella tua zona?")
+    print_grafic("Domanda 9: Quante fonti di acqua potabile sono monitorate nella tua zona?")
     risposta = input("Risposta: ")
-    print(f"{nikename} ha risposto: {risposta}")
+    print_grafic(f"{nikename} ha risposto: {risposta}")
 
 def domada10(nikename):
-    print("Domanda 10: Qual è il principale fattore che influisce sulla qualità dell'acqua nella tua zona?")
+    root.clear()
+    print_grafic("Domanda 10: Qual è il principale fattore che influisce sulla qualità dell'acqua nella tua zona?")
     risposta = input("Risposta: ")
-    print(f"{nikename} ha risposto: {risposta}")
+    print_grafic(f"{nikename} ha risposto: {risposta}")
 
 
 def main(nikename):
+
     domada1(nikename)
     domada2(nikename)
     domada3(nikename)
