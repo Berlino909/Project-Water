@@ -1,0 +1,8 @@
+label = tk.Label(root, text="Inserisci il cognome della persona:", bg="lightgray", font=("Helvetica", 12))
+label.pack(pady=10)
+
+text_cognome = tk.Text(root, height=2, width=30)
+text_cognome.pack(pady=10)
+
+button = tk.Button(root, text="Aggiungi persona", command=lambda: aggiungi_persona(text_nome, text_cognome), bg="blue", fg="white", font=("Helvetica", 12))
+button.pack(pady=20)
