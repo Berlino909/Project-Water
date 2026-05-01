@@ -7,9 +7,9 @@ dizionario_risposte_giuste = {
     3: "60%",
     4: "Vero",
     5: "100",
-    6: "uso domestico",
-    7: "800",
-    8: "inquinamento",
+    6: "//",
+    7: "//",
+    8: "//",
     9: "marsiglia",
     10: "ph",
 }
