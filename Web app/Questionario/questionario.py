@@ -36,20 +36,23 @@ def pulisci_schermo():
         widget.destroy()
 
 def mostra_domanda(nikename, index=0):
+    
     if index >= len(questions):
         fine_questionario(nikename)
         return
 
-    nr, testo = questions[index]
+    nrisposta = questions[index][0]
+    testo = questions[index][1]
+    
     pulisci_schermo()
-    print_grafic(f"Domanda {nr}: {testo}")
+    print_grafic(f"Domanda {nrisposta}: {testo}")
 
     entry = tk.Entry(root, font=("Helvetica", 10), width=40)
     entry.pack(pady=5)
 
     def invia():
         risposta = entry.get().strip()
-        dizionario_risposte[nr] = risposta
+        dizionario_risposte[nrisposta] = risposta
         mostra_domanda(nikename, index + 1)
 
     botton_invia = tk.Button(
@@ -68,13 +71,17 @@ def fine_questionario(nikename):
     print_grafic("Questionario completato! Grazie per le tue risposte.")
     print_grafic(f"Nickname: {nikename}")
     print_grafic("Risposte salvate:")
+    punteggio = 0
     for nr in range(1, len(questions) + 1):
         risposta = dizionario_risposte[nr] or 'Nessuna risposta'
         risposta_giusta = dizionario_risposte_giuste.get(nr)
         if risposta == risposta_giusta:
-            print_grafic(f"{nr}: {risposta} (Corretta)")
+            print_grafic(f"{nr}: {risposta} (Corretta) + 10 punti")
+            punteggio += 10
+
         else:
-            print_grafic(f"{nr}: {risposta} (Errata - Risposta corretta: {risposta_giusta})")
+            print_grafic(f"{nr}: {risposta} (Errata - Risposta corretta: {risposta_giusta}) - 0 punti")
+    print_grafic(f"Punteggio totale: {punteggio}/100")
 
 def main(nikename):
     mostra_domanda(nikename, 0)
