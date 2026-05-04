@@ -28,7 +28,7 @@ questions = [
 ]
 
 def print_grafic(text):
-    label_grafic = tk.Label(root, text=text, bg="lightgray", font=("Helvetica", 10), wraplength=350, justify="left")
+    label_grafic = tk.Label(root, text=text, bg="white", font=("Helvetica", 10), wraplength=350, justify="left")
     label_grafic.pack(pady=5)
 
 def pulisci_schermo():
