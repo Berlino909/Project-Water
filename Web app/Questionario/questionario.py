@@ -11,7 +11,7 @@ dizionario_risposte_giuste = {
     7: "//",
     8: "//",
     9: "marsiglia",
-    10: "ph",
+    10: "Ph",
 }
 
 questions = [
