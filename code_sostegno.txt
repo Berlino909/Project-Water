@@ -1,8 +1,55 @@
-label = tk.Label(root, text="Inserisci il cognome della persona:", bg="lightgray", font=("Helvetica", 12))
-label.pack(pady=10)
+# Funzione per cambiare schermata
 
-text_cognome = tk.Text(root, height=2, width=30)
-text_cognome.pack(pady=10)
+import tkinter as tk
+lista_nomi = ["Alice", "Bob", "Charlie", "Diana", "Eve"]
+indice = 0
 
-button = tk.Button(root, text="Aggiungi persona", command=lambda: aggiungi_persona(text_nome, text_cognome), bg="blue", fg="white", font=("Helvetica", 12))
-button.pack(pady=20)
+def pulizia ():
+    for widget in root.winfo_children():
+        widget.destroy()
+
+
+
+
+def mostra_prossimo(indice):
+    pulizia()
+    frame_mario.destroy()
+   
+    # 2. Creiamo la nuova schermata (Luca)
+    frame_prossimo = tk.Frame(root)
+    frame_prossimo.pack(expand=True, fill="both")
+   
+    # 3. Aggiungiamo i widget a frame_prossimo
+    etichetta=tk.Label(frame_prossimo)
+
+    etichetta.config(text=lista_nomi[indice+1], font=("Arial", 24))
+    etichetta.pack(pady=50)
+    bottone=tk.Button(frame_prossimo)
+
+    bottone.config(text="Prossimo", command=lambda: mostra_prossimo(indice+1))
+
+    bottone.pack()
+
+# Setup Finestra Principale (Tk)
+root = tk.Tk()
+root.title("Esempio Cambio Frame")
+root.geometry("400x300")
+
+# Schermata Iniziale (Frame Mario)
+frame_mario = tk.Frame(root)
+frame_mario.pack(expand=True, fill="both")
+
+etic=tk.Label(frame_mario)
+
+etic.config(text=lista_nomi[indice], font=("Arial", 24))
+
+etic.pack(pady=50)
+btn=tk.Button(frame_mario)
+if indice < len(lista_nomi)-1:
+    btn.config(text="Successivo", command=lambda: mostra_prossimo(indice+1))
+else:
+    btn.config(text="Fine", command=root.quit)
+
+btn.pack()
+
+root.mainloop()
