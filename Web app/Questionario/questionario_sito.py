@@ -2,7 +2,7 @@ import tkinter as tk
 
 dizionario_risposte = {1:None, 2:None, 3:None, 4:None, 5:None, 6:None, 7:None, 8:None, 9:None, 10:None}
 dizionario_risposte_giuste = {
-    1: "fiume",
+    1: "//",
     2: "6.300",
     3: "60%",
     4: "Vero",
@@ -26,7 +26,7 @@ questions = [
     (6, "DOMANDA CHIMICA"),
     (7, "DOMANDA FISICA"),
     (8, "DOMANDA FISICA"),
-    (9, "Nel secondo esperimento che sapone abbiamo usato?"),
+    (9, "Nel secondo esperimento di Hera che sapone abbiamo usato?"),
     (10, "Qual è l'unità di misura per l'acidita di un sistema?"),
 ]
 
