@@ -134,24 +134,12 @@ nav {
     border-bottom: 3px solid #00c3ff;
 }
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-    .nav_board h3 {
-        text-align: center;
-    }
-}
-
-
-.video-container {
-    display: block;
-    margin: 40px auto;
-    width: 600px;
-    border-radius: 12px;
-    
+.title-content-sms {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a2a6c;
+    font-size: 2rem;
+    position: relative;
 }
 
 .elenchi-sms {
@@ -164,6 +152,7 @@ nav {
     border-left: 8px solid #00c3ff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
+
 .elenchi-sms p {
     margin: 0;
     font-size: 1rem;
@@ -171,13 +160,6 @@ nav {
     line-height: 1.5;
 }
 
-.title-content-sms {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #1a2a6c;
-    font-size: 2rem;
-    position: relative;
-}
 .content-image-sms {
     display: block;
     margin: 30px auto;
@@ -186,7 +168,93 @@ nav {
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 .img-speciale {
     display: flex;
     flex-direction: row;
+}
+
+.video-container {
+    display: block;
+    margin: 40px auto;
+    width: 600px;
+    border-radius: 12px;
+}
+
+.report-verticale {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.report-verticale .content-image-sms {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.report-verticale h4 {
+    text-transform: none;
+    font-size: 1.4rem;
+    color: #1a2a6c;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eef9ff;
+    padding-bottom: 5px;
+}
+
+.report-verticale h5 {
+    color: #1a2a6c;
+    font-size: 1.2rem;
+    margin: 15px 0 5px 0;
+    font-weight: 600;
+}
+
+.sezione-bilanciata {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.sezione-bilanciata .testo-lato {
+    flex: 1.3;
+}
+
+.sezione-bilanciata .img-lato {
+    flex: 0.7;
+    text-align: center;
+}
+
+.sezione-bilanciata .img-lato img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .nav_board h3 {
+        text-align: center;
+    }
+    .content {
+        padding: 20px;
+    }
+    .video-container {
+        width: 100%;
+    }
+    .sezione-bilanciata {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
