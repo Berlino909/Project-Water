@@ -19,16 +19,15 @@ dizionario_risposte_giuste = {
 }
 
 questions = [
-    (1, "L'impronta idrica media del gruppo classe è risultata equilibrata o elevata in alcune eccezioni?"),
-    (2, "Quanti litri di acqua virtuale servono (in media) per un chilo di carne bovina?"),
-    (3, "Qual è la percentuale media di acqua nel corpo di un essere umano adulto?"),
-    (4, "Vero o falso: l'acqua è il nostro principale carburante energetico durante lo sport?"),
-    (5, "A quale temperatura (in °C) è iniziata l'ebollizione tumultuosa nel vostro esperimento 1?"),
-    (6, "Quale sostanza (es. detersivo) spezza i legami della tensione superficiale dell'acqua?"),
-    (7, "A quale temperatura (in °C) l'acqua raggiunge il suo picco di massima densità?"),
-    (8, "Quale stato dell'acqua galleggia a causa del reticolo cristallino esagonale espanso?"),
-    (9, "Nel secondo esperimento di Hera che sapone abbiamo usato?"),
-    (10, "Qual è l'unità di misura (scritto con la corretta maiuscola/minuscola) per l'acidità di un sistema?"),
+    (1, "Quanti litri di acqua virtuale servono (in media) per un chilo di carne bovina?"),
+    (2, "Qual è la percentuale media di acqua nel corpo di un essere umano adulto?"),
+    (3, "Vero o falso: l'acqua è il nostro principale carburante energetico durante lo sport?"),
+    (4, "A quale temperatura (in °C) è iniziata l'ebollizione tumultuosa nel vostro esperimento 1?"),
+    (5, "Quale sostanza (es. detersivo) spezza i legami della tensione superficiale dell'acqua?"),
+    (6, "A quale temperatura (in °C) l'acqua raggiunge il suo picco di massima densità?"),
+    (7, "Quale stato dell'acqua galleggia a causa del reticolo cristallino esagonale espanso?"),
+    (8, "Nel secondo esperimento di Hera che sapone abbiamo usato?"),
+    (9, "Qual è l'unità di misura (scritto con la corretta maiuscola/minuscola) per l'acidità di un sistema?"),
 ]
 
 def print_grafic(text):
